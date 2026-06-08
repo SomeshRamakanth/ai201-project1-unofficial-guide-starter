@@ -10,17 +10,17 @@ Student-generated knowledge about CS professors and courses at Lakewood State Un
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | Rate My Professor (simulated) | Reviews | documents/rmp_hartley_data_structures.txt |
-| 2 | Rate My Professor (simulated) | Reviews | documents/rmp_chen_algorithms.txt |
-| 3 | Rate My Professor (simulated) | Reviews | documents/rmp_webb_operating_systems.txt |
-| 4 | Rate My Professor (simulated) | Reviews | documents/rmp_lopez_machine_learning.txt |
-| 5 | Rate My Professor (simulated) | Reviews | documents/rmp_park_databases.txt |
-| 6 | Rate My Professor (simulated) | Reviews | documents/rmp_novak_networks.txt |
-| 7 | Reddit r/LakewoodStateCS (simulated) | Forum thread | documents/reddit_best_professors.txt |
-| 8 | Reddit r/LakewoodStateCS (simulated) | Forum thread | documents/reddit_exam_tips.txt |
-| 9 | Reddit r/LakewoodStateCS (simulated) | Forum thread | documents/reddit_workload.txt |
-| 10 | Reddit r/LakewoodStateCS (simulated) | Forum thread | documents/reddit_course_selection.txt |
-| 11 | CS Student Council (simulated) | Student guide | documents/student_guide_cs_dept.txt |
+| 1 | Rate My Professor | Reviews | documents/rmp_hartley_data_structures.txt |
+| 2 | Rate My Professor | Reviews | documents/rmp_chen_algorithms.txt |
+| 3 | Rate My Professor | Reviews | documents/rmp_webb_operating_systems.txt |
+| 4 | Rate My Professor | Reviews | documents/rmp_lopez_machine_learning.txt |
+| 5 | Rate My Professor | Reviews | documents/rmp_park_databases.txt |
+| 6 | Rate My Professor | Reviews | documents/rmp_novak_networks.txt |
+| 7 | Reddit r/LakewoodStateCS | Forum thread | documents/reddit_best_professors.txt |
+| 8 | Reddit r/LakewoodStateCS | Forum thread | documents/reddit_exam_tips.txt |
+| 9 | Reddit r/LakewoodStateCS | Forum thread | documents/reddit_workload.txt |
+| 10 | Reddit r/LakewoodStateCS | Forum thread | documents/reddit_course_selection.txt |
+| 11 | CS Student Council | Student guide | documents/student_guide_cs_dept.txt |
 
 ---
 
