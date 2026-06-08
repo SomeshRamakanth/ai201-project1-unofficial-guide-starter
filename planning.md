@@ -9,114 +9,115 @@
 
 ## Domain
 
-<!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
+Student-generated knowledge about CS professors and courses at Lakewood State University. This includes Rate My Professor-style reviews, Reddit threads with exam tips and course selection advice, and informal student guides. This knowledge is valuable because official course descriptions only list topics and prerequisites — they say nothing about a professor's teaching style, how hard exams actually are, whether office hours are useful, or which courses have brutal workloads. Students currently have to dig through fragmented subreddit threads and review sites to piece this together. This system makes it searchable in plain language.
 
 ---
 
 ## Documents
 
-<!-- List your specific sources: URLs, subreddit names, forum threads, or file descriptions.
-     Aim for at least 10 sources that together cover different subtopics or perspectives within your domain. -->
-
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | Rate My Professor (simulated) | Reviews for Prof. Alan Hartley — Data Structures | documents/rmp_hartley_data_structures.txt |
+| 2 | Rate My Professor (simulated) | Reviews for Prof. Sandra Chen — Algorithms | documents/rmp_chen_algorithms.txt |
+| 3 | Rate My Professor (simulated) | Reviews for Prof. Marcus Webb — Operating Systems | documents/rmp_webb_operating_systems.txt |
+| 4 | Rate My Professor (simulated) | Reviews for Prof. Diana Lopez — Machine Learning | documents/rmp_lopez_machine_learning.txt |
+| 5 | Rate My Professor (simulated) | Reviews for Prof. Kevin Park — Database Systems | documents/rmp_park_databases.txt |
+| 6 | Rate My Professor (simulated) | Reviews for Prof. Rachel Novak — Computer Networks | documents/rmp_novak_networks.txt |
+| 7 | Reddit r/LakewoodStateCS (simulated) | Thread: "Best CS professors for feedback and learning?" | documents/reddit_best_professors.txt |
+| 8 | Reddit r/LakewoodStateCS (simulated) | Thread: "Tips for surviving CS exams — what actually helped?" | documents/reddit_exam_tips.txt |
+| 9 | Reddit r/LakewoodStateCS (simulated) | Thread: "Which CS courses have the worst workload?" | documents/reddit_workload.txt |
+| 10 | Reddit r/LakewoodStateCS (simulated) | Thread: "Course selection advice for CS sophomores" | documents/reddit_course_selection.txt |
+| 11 | Student blog (simulated) | Informal guide to the CS department | documents/student_guide_cs_dept.txt |
 
 ---
 
 ## Chunking Strategy
 
-<!-- How will you split documents into chunks?
-     State your chunk size (in tokens or characters), overlap size, and explain why those
-     numbers fit the structure of your documents.
-     A review-heavy corpus warrants different chunking than a long FAQ. -->
+**Chunk size:** 400 characters
 
-**Chunk size:**
+**Overlap:** 60 characters
 
-**Overlap:**
-
-**Reasoning:**
+**Reasoning:** The corpus is review-style and Reddit-style text — each review is a short paragraph (2–5 sentences). A 400-character chunk captures roughly one full review or one coherent comment without splitting a single opinion across two chunks. Using 500+ characters risked merging two different reviewers' opinions into a single chunk, which would confuse retrieval. The 60-character overlap preserves sentence continuity at boundaries — important when a reviewer's key point (e.g., "exams are straightforward once you do the practice problems") starts near the end of a chunk.
 
 ---
 
 ## Retrieval Approach
 
-<!-- Which embedding model are you using (e.g., all-MiniLM-L6-v2 via sentence-transformers)?
-     How many chunks will you retrieve per query (top-k)?
-     If you were deploying this for real users and cost wasn't a constraint, what tradeoffs
-     would you weigh in choosing a different embedding model — context length, multilingual
-     support, accuracy on domain-specific text, latency? -->
+**Embedding model:** `all-MiniLM-L6-v2` via `sentence-transformers`
 
-**Embedding model:**
+**Top-k:** 5
 
-**Top-k:**
-
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** For a production system I'd weigh several factors. Context length: all-MiniLM-L6-v2 has a 256-token limit, which is fine for short reviews but would truncate longer documents — OpenAI's `text-embedding-3-large` or Cohere's `embed-v3` handle up to 8k tokens. Multilingual support: if the student body speaks multiple languages, a multilingual model like `paraphrase-multilingual-MiniLM-L12-v2` would be necessary. Domain specificity: general-purpose embeddings may not understand CS jargon well — a fine-tuned model on student review data would likely improve retrieval precision. Latency: running sentence-transformers locally is fast and free, but an API-hosted model adds network latency while removing the need for local GPU/CPU resources. For this project, local + free is the right tradeoff.
 
 ---
 
 ## Evaluation Plan
 
-<!-- List your 5 test questions with their expected correct answers.
-     Questions should be specific enough that you can judge whether the system's response
-     is right or wrong. "What are good dining halls?" is too vague.
-     "What do students say about wait times at [dining hall name] during lunch?" is testable. -->
-
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | Which CS professor gives the most useful feedback on assignments? | Prof. Sandra Chen (Algorithms) — multiple reviews mention detailed written feedback and quick response to office hour questions |
+| 2 | How hard are exams in Data Structures with Hartley? | Hard — Hartley's exams require deep understanding, not just memorization; students recommend doing all practice problems |
+| 3 | Which CS professor is the easiest grader? | Prof. Kevin Park (Database Systems) — reviews consistently call it an easy A, though lectures are described as not very useful |
+| 4 | How heavy is the workload in Machine Learning with Lopez? | Very heavy — weekly readings, coding projects in PyTorch, and a final project; students say it's worth it but plan for 15+ hrs/week |
+| 5 | What do students say about office hours in Computer Networks? | Novak's office hours are described as extremely helpful — she works through problems step by step and stays late |
 
 ---
 
 ## Anticipated Challenges
 
-<!-- What could go wrong? Name at least two specific risks with reasoning.
-     Consider: noisy or inconsistent documents, missing source attribution, off-topic
-     retrieval, chunks that split key information across boundaries. -->
+1. **Chunk boundary splitting a key claim.** A review like "The midterm was brutal — 40% of the class failed — but Hartley curved everyone up 15 points" could be split so the retrieval chunk only contains the first half. The system would return a misleading answer about exam difficulty without the curve context. The 60-character overlap partially mitigates this, but edge cases will still occur.
 
-1.
-
-2.
+2. **Synonym and nickname mismatch.** Students often refer to professors by last name only ("Chen's class"), by nickname, or by course number ("CS301"). The embedding model may not link "algorithms course" to "Chen" or "CS301" without seeing both terms in the same chunk. This is a known weakness of dense retrieval on short-text corpora without metadata filtering.
 
 ---
 
 ## Architecture
 
-<!-- Draw a diagram of your pipeline showing the five stages:
-     Document Ingestion → Chunking → Embedding + Vector Store → Retrieval → Generation
-     Label each stage with the tool or library you're using.
-     You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
-     You'll use this diagram as context when prompting AI tools to implement each stage. -->
+```
+Raw .txt files in documents/
+        │
+        ▼
+[1] Ingestion (ingest.py)
+    • Load each .txt file
+    • Strip extra whitespace
+    • Tag each doc with source filename as metadata
+        │
+        ▼
+[2] Chunking (pipeline.py → chunk_text())
+    • Split by character with 400-char chunks, 60-char overlap
+    • Preserve source metadata per chunk
+        │
+        ▼
+[3] Embedding + Vector Store (pipeline.py → build_index())
+    • Embed with sentence-transformers all-MiniLM-L6-v2
+    • Store in ChromaDB (local, persistent at ./chroma_db)
+        │
+        ▼
+[4] Retrieval (rag.py → retrieve())
+    • Embed user query with same model
+    • Return top-5 chunks by cosine similarity from ChromaDB
+        │
+        ▼
+[5] Generation (rag.py → generate())
+    • Format retrieved chunks as numbered context blocks
+    • Send to Groq llama-3.3-70b-versatile with grounding system prompt
+    • Response includes [Source: filename] citations
+        │
+        ▼
+[6] Query Interface (app.py)
+    • Gradio ChatInterface
+    • Shows answer + source citations
+```
 
 ---
 
 ## AI Tool Plan
 
-<!-- For each part of the pipeline below, describe:
-     - Which AI tool you plan to use (Claude, Copilot, ChatGPT, etc.)
-     - What you'll give it as input (which sections of this planning.md, which requirements)
-     - What you expect it to produce
-     - How you'll verify the output matches your spec
-
-     "I'll use AI to help me code" is not a plan.
-     "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
-     with my specified chunk size and overlap" is a plan. -->
-
 **Milestone 3 — Ingestion and chunking:**
+Give Claude the Chunking Strategy section and the document list from this file. Ask it to implement `load_documents()` and `chunk_text()` in `pipeline.py` — `load_documents()` should return a list of dicts with `text` and `source` keys, and `chunk_text()` should split using the 400/60 parameters specified above. Verify by printing chunk count and inspecting 3 random chunks to confirm they don't mid-sentence truncate a reviewer's main point.
 
 **Milestone 4 — Embedding and retrieval:**
+Give Claude the Architecture diagram and ask it to implement `build_index()` (embed + store in ChromaDB) and `retrieve()` (query ChromaDB, return top-5 chunks with sources) in `pipeline.py` and `rag.py`. Verify by running 2 test queries and checking that the returned chunks are topically relevant to the question.
 
 **Milestone 5 — Generation and interface:**
+Give Claude the Grounded Generation requirement and the system prompt spec. Ask it to implement `generate()` in `rag.py` and the Gradio `app.py`. Verify that every response includes at least one `[Source: ...]` citation and that the model declines to answer when no relevant chunks are retrieved.

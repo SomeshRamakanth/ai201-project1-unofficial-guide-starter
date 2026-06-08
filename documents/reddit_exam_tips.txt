@@ -1,0 +1,46 @@
+SOURCE: Reddit r/LakewoodStateCS — Thread: "Tips for surviving CS exams — what actually helped?"
+
+---
+
+Posted by u/freshman_panic:
+Midterms are coming up. Taking Hartley (Data Structures) and Webb (OS). Any advice from people who've been through these before?
+
+---
+
+u/senior_cs_lsu:
+Hartley: do every practice problem he posts. Not skim them — actually solve them from scratch, then check your work. His real exam questions are structurally very similar to the practice problems but with different inputs. If you understand WHY the practice problems work, you'll be fine. Memorizing won't save you — he asks you to derive things on the spot.
+
+---
+
+u/double_major_survivor:
+For Hartley, the reference sheet you make yourself is actually worth spending time on. He lets you bring a one-page handwritten sheet to the exam. Use both sides, small handwriting. Put the invariants for each data structure on there — not pseudocode, the actual properties. Knowing that an AVL tree guarantees height log(n) will get you through a lot of questions.
+
+---
+
+u/nightowl_coder:
+Webb is more straightforward. He literally tells you the topics that will be covered. Make a list of those topics, make sure you can explain each one in plain English, and then make sure you can work through an example. For OS specifically: understand process scheduling algorithms (FCFS, SJF, Round Robin), virtual memory and page replacement, and file system structure. Those come up every year.
+
+---
+
+u/ta_whispers:
+This is semi-public knowledge but the TAs for Hartley's class post exam prep notes in the department Discord. Join that if you haven't already. The TA-led review session the week before the midterm is really valuable — attend it.
+
+---
+
+u/freshman_panic [OP]:
+What about study groups? Worth it for these classes?
+
+---
+
+u/gradschool_bound:
+For Hartley, study groups are only useful if everyone has already attempted the problems independently first. If you go in without having tried, you just watch someone else work through it and you don't retain anything. For Webb, study groups are great for talking through concepts out loud — explaining virtual memory to a friend is the fastest way to figure out what you actually don't understand.
+
+---
+
+u/fourth_year_finally:
+Hartley tip: he will often ask you to trace through an algorithm on a specific input. Practice this. Like actually practice tracing through a B-tree insertion or a graph DFS on paper. Not just knowing it conceptually — actually writing out each step by hand.
+
+---
+
+u/third_year_problems:
+For Chen's Algorithms (not in OP's list but worth mentioning): her exams are hard but her review sessions are gold. She surveys the class on what they're uncertain about and then builds the review session around that. Attend every review session. She often gives sample problems that are nearly identical to exam problems.

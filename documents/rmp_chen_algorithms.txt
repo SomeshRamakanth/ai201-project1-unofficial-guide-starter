@@ -1,0 +1,36 @@
+SOURCE: Rate My Professor — Prof. Sandra Chen, CS302 Algorithms, Lakewood State University
+
+---
+
+REVIEW 1 | Rating: 5/5 | Difficulty: 4/5
+Chen is the gold standard for feedback in this department. Every assignment comes back with detailed written comments — not just points off but an explanation of exactly where your reasoning broke down and what a correct approach looks like. I've never had a professor respond to emails this fast (usually within a few hours). Her lectures are organized with slides posted in advance. Highly recommend.
+
+---
+
+REVIEW 2 | Rating: 5/5 | Difficulty: 4/5
+If you want to actually learn algorithms and not just pass the class, take Chen. She explains dynamic programming better than any resource I found online. Office hours feel like a tutoring session — she doesn't just give you the answer, she asks questions to lead you there yourself. That was frustrating at first but I learned so much more than I would have if she'd just told me what to do.
+
+---
+
+REVIEW 3 | Rating: 4/5 | Difficulty: 3/5
+Solid professor. Very fair grader. Her rubrics are detailed and she applies them consistently. The homework sets are challenging but not unreasonable. My one critique: lectures can feel slow if you've already read the chapter. The real value is in office hours — she gives feedback on your problem-solving approach that you won't get from the textbook.
+
+---
+
+REVIEW 4 | Rating: 5/5 | Difficulty: 4/5
+Chen's feedback on my final project was more detailed than what I get from my research advisor. She circled every place where my analysis was sloppy and suggested specific corrections. That level of engagement is why I'm taking her again for the advanced algorithms elective. Her exams are hard but very fair — nothing came out of nowhere.
+
+---
+
+REVIEW 5 | Rating: 4/5 | Difficulty: 4/5
+One of the most organized professors in CS. She posts lecture notes, practice problems, and solutions on a consistent schedule. Assignment feedback is always specific and constructive. She holds extra review sessions before each exam and actually tailors them to where the class struggled based on a survey she sends out. That kind of effort is rare.
+
+---
+
+REVIEW 6 | Rating: 3/5 | Difficulty: 4/5
+Chen is a good professor but the course is genuinely difficult. I came in expecting a reasonable algorithms class and ended up working 10-12 hours a week on it. The material is important for interviews, which helped me stay motivated. Her feedback on assignments is very helpful — more useful than any TA I've had. Just be ready to put in the time.
+
+---
+
+REVIEW 7 | Rating: 5/5 | Difficulty: 4/5
+Best professor I had all year. She clearly cares about whether students actually understand the material. When I went to office hours confused about network flow, she spent 45 minutes walking me through it from scratch. She also gives partial credit thoughtfully — she reads what you wrote, not just whether your final answer matches. If you're going into software engineering or grad school, this class is essential.

@@ -1,0 +1,56 @@
+SOURCE: Student-written guide — "The Unofficial CS Department Survival Guide", Lakewood State University CS Student Council
+
+---
+
+INTRODUCTION
+
+This guide was written by upperclassmen and recent graduates. It covers things the official course catalog won't tell you: which professors are worth the difficulty, how to manage workload across semesters, and the strategies that actually work in exams and projects.
+
+---
+
+PROFESSORS AT A GLANCE
+
+Prof. Alan Hartley (Data Structures, CS201)
+Difficulty: High. Reward: High. Hartley is demanding and moves fast. His exams are among the hardest in the department — expect derivation questions, not just definitions. The key to passing is doing every practice problem he posts, not just reading through them. His class has a steep curve by the end; very few students fail if they engage with the material. Best used for: building a real foundation in CS fundamentals.
+
+Prof. Sandra Chen (Algorithms, CS302)
+Difficulty: Moderate-High. Reward: Very High. Chen is universally praised for the quality of her feedback. Assignments come back with detailed, constructive comments. Her office hours are structured to help you think, not just to give you answers. Her review sessions before exams are tailored to actual student confusion. Best used for: learning to think algorithmically and getting mentorship-quality feedback.
+
+Prof. Marcus Webb (Operating Systems, CS350)
+Difficulty: Moderate. Reward: Moderate-High. Webb's lectures are dry but accurate. The real learning happens through the projects — a scheduler, a memory manager, and a file system. He is fair, consistent, and predictable. If you need an engaging lecturer, this isn't your class. If you want to actually understand how systems work, do the projects fully. Best used for: systems programming foundations.
+
+Prof. Diana Lopez (Machine Learning, CS410)
+Difficulty: Very High. Reward: Very High. Lopez is intense. The workload is genuinely one of the highest in the department — budget 15 or more hours per week. She gives feedback on your final project that resembles a journal review. Her class has launched multiple students into research positions and ML engineering roles. Do not take this in a heavy semester. Best used for: serious ML preparation.
+
+Prof. Kevin Park (Database Systems, CS315)
+Difficulty: Low. Reward: Moderate. Park's class is the go-to for students who need to manage their semester load. The SQL content is genuinely useful but the class won't challenge you deeply. Grading is generous and the final project is a group application. Best used for: learning SQL and databases basics without significant stress.
+
+Prof. Rachel Novak (Computer Networks, CS370)
+Difficulty: Moderate-High. Reward: High. Novak is known for exceptional office hours — she stays late, explains clearly, and remembers where each student is in their understanding. Her class covers TCP/IP, routing, DNS, and application-layer protocols in depth. The Wireshark labs make abstract concepts concrete. Best used for: understanding networking for backend or distributed systems work.
+
+---
+
+GENERAL SURVIVAL TIPS
+
+1. Upper-level CS courses are not designed to be taken all at once. Pick one hard course and one lighter course per semester if you can.
+
+2. Office hours are not optional in hard courses. The professors who run good office hours (Chen, Novak in particular) can make the difference between passing and failing.
+
+3. Study groups only work if everyone has attempted the work individually first. Don't free-ride on your group's smarter members — you'll pay for it on the exam.
+
+4. Start projects on the day they're assigned. Every single person who has ever said "I'll start the file system project on Sunday" has regretted it.
+
+5. The CS department Discord server has channels for each major course. Join it. TAs post hints, past exam topics, and sometimes very useful direct advice.
+
+---
+
+COURSE SEQUENCING RECOMMENDATIONS
+
+For students interested in ML:
+Chen Algorithms → Lopez ML (core sequence). Add Webb OS and Novak Networks for ML engineering track.
+
+For students interested in systems:
+Webb OS → Novak Networks. Add Hartley Data Structures for strong fundamentals.
+
+For students managing GPA:
+Park Databases pairs well with any hard course. It's the natural pressure valve in a heavy semester.

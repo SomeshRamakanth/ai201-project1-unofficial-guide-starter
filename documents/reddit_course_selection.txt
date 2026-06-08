@@ -1,0 +1,56 @@
+SOURCE: Reddit r/LakewoodStateCS — Thread: "Course selection advice for CS sophomores"
+
+---
+
+Posted by u/rising_sophomore:
+Just finished my first year. Have to pick upper-level CS electives for next year. Any advice on sequencing or what to take together vs. not?
+
+---
+
+u/senior_cs_lsu:
+Don't take Hartley and Lopez in the same semester. Both require your full attention and Hartley's exams will cluster with Lopez's project deadlines in a way that will be miserable.
+
+---
+
+u/gradschool_bound:
+Take Chen's Algorithms before Lopez's Machine Learning. The algorithm analysis fundamentals (Big-O, dynamic programming, graph algorithms) that Chen teaches are directly used in ML. You won't be lost in Lopez's class without it, but you'll be slower.
+
+---
+
+u/double_major_survivor:
+If you want to explore before specializing: take Webb's OS sophomore year. It's not the easiest but it's more manageable than its reputation and gives you a foundation for everything else — understanding memory, processes, and file systems makes you a better programmer in every other course.
+
+---
+
+u/rising_sophomore [OP]:
+I'm interested in both ML and systems. Can I do both?
+
+---
+
+u/third_year_problems:
+Totally possible but sequence it right. Do Webb's OS and Chen's Algorithms in the same semester (sophomore or junior year) — they pair well, similar difficulty, different subject matter. Then do Lopez's ML on its own or with something lighter like Park's Databases.
+
+---
+
+u/practical_cs_student:
+The classic "good semester" configuration that upperclassmen recommend: Chen Algorithms + Webb OS together (challenging but manageable, they don't compete for the same type of brain energy), then Lopez ML + Park Databases in the next semester (Lopez is hard, Park is easy — it's a natural balance).
+
+---
+
+u/cs_department_vet:
+Novak's Networks is underrated and often skipped by students going into ML. Don't skip it. Understanding how the internet actually works (TCP, DNS, HTTP, packet routing) is valuable even if you're doing data science. It also opens up distributed systems coursework later. Novak is one of the better professors — her office hours alone make it worth it.
+
+---
+
+u/rising_sophomore [OP]:
+Is Park's Databases worth taking if I want to go into ML?
+
+---
+
+u/gradschool_bound:
+SQL is essential for any data work. Park's class covers it at a reasonable depth. The class won't be your hardest but the knowledge is directly applicable — querying, joins, normalization. Take it. Just don't expect a rigorous deep dive into database internals.
+
+---
+
+u/fourth_year_finally:
+If you want to go into ML research or PhD programs: Chen Algorithms → Lopez ML is the most important sequence. If you want ML engineering in industry: add Novak Networks and Webb OS to that. Being able to think about scale, latency, and distributed systems on top of ML is what separates ML engineers from people who just run notebooks.

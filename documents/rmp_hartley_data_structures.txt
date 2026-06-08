@@ -1,0 +1,36 @@
+SOURCE: Rate My Professor — Prof. Alan Hartley, CS201 Data Structures, Lakewood State University
+
+---
+
+REVIEW 1 | Rating: 4/5 | Difficulty: 5/5
+Hartley is one of the best teachers in the CS department if you're willing to put in the work. His lectures are dense but extremely clear — he builds from first principles every single time. The exams are genuinely hard. Don't expect to memorize your way through them. You need to actually understand why a red-black tree rebalances the way it does, not just that it does. I failed the first midterm, then went to every office hour session and aced the final. Worth it.
+
+---
+
+REVIEW 2 | Rating: 3/5 | Difficulty: 5/5
+Hartley knows his stuff but moves incredibly fast. If you fall behind in week 3, you will be lost by week 6. The projects are interesting — implementing your own hash map and AVL tree from scratch was actually fun once I got over the initial panic. Exams require deep conceptual understanding. He gives partial credit generously though, which saved me. Do every single practice problem he posts. I mean every single one.
+
+---
+
+REVIEW 3 | Rating: 5/5 | Difficulty: 4/5
+Took Hartley for Data Structures last spring. He is demanding but completely fair. Office hours are well-attended but he makes time for everyone. His exam questions are not trick questions — they test whether you understand the material at a fundamental level. I studied his past exams (available on the course site) and found the style very consistent. The final project in pairs was the highlight of the semester.
+
+---
+
+REVIEW 4 | Rating: 2/5 | Difficulty: 5/5
+Not for everyone. Hartley expects you to have solid math foundations coming in. If your discrete math is weak, you'll struggle. He's not mean but he won't slow down for you either. His feedback on projects is minimal — you get a grade and a line or two. I wished he explained more during lectures instead of just showing derivations on the board. The curve at the end helped (class average was around 65 before curve).
+
+---
+
+REVIEW 5 | Rating: 4/5 | Difficulty: 5/5
+Hartley's class is a rite of passage for CS students here. It's hard, the exams feel brutal at first, but you come out actually knowing data structures. I've used what I learned directly in my internship interviews. His style is proof-heavy — if you hate proofs, reconsider. Attendance matters even though it's not graded; his examples in class don't appear in the slides.
+
+---
+
+REVIEW 6 | Rating: 5/5 | Difficulty: 4/5
+Best professor I've had at Lakewood State. He's demanding but passionate about the subject. The midterm was hard — about 40% of the class failed it — but he curved everyone up 15 points and sent a detailed email explaining exactly what the class got wrong and how to do better. That kind of transparency is rare. Absolutely take him if you want to actually learn.
+
+---
+
+REVIEW 7 | Rating: 3/5 | Difficulty: 4/5
+Mixed feelings. Hartley is clearly brilliant and the material is well-organized. But his communication style is very blunt and some students find him intimidating during class Q&A. If you can get past that, the content is excellent. His written notes are better than the textbook in my opinion. Exam format: two midterms and a final, all closed-book, with a reference sheet you prepare yourself.

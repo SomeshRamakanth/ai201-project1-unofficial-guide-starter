@@ -1,0 +1,57 @@
+SOURCE: Reddit r/LakewoodStateCS — Thread: "Which CS courses have the worst workload?"
+
+---
+
+Posted by u/cs_planner:
+Trying to figure out which upper-level CS courses will absolutely destroy my semester and which are manageable. Anyone want to share their honest time estimates?
+
+---
+
+u/just_graduated_finally:
+Lopez's Machine Learning (CS410) is the single most time-consuming course I took in four years. I tracked my hours: averaged 16 hours per week across the semester. Weekly readings (2-3 papers), coding assignments in PyTorch, and a final project that starts in week 8 and never really ends. Worth it — I got a job from it — but budget your semester accordingly. Do NOT take this with another heavy course.
+
+---
+
+u/senior_cs_lsu:
+Hartley's Data Structures (CS201) is hard but the workload is more manageable than its reputation suggests. I spent about 8-10 hours per week. The difficulty comes from the depth of understanding required, not the volume of work. Exams are hard. Projects are interesting. You'll struggle if your discrete math is weak.
+
+---
+
+u/double_major_survivor:
+Chen's Algorithms (CS302) is 8-10 hours/week for me. Very consistent workload — problem sets due every two weeks, consistent expectations. Not an insane amount of work but demanding work. The difference between Chen and some other professors is that you can't just grind through it — you have to actually think.
+
+---
+
+u/cs_planner [OP]:
+What about OS and Networks?
+
+---
+
+u/nightowl_coder:
+Webb's OS (CS350) is manageable — maybe 8-9 hours/week on average, but the projects spike. The file system project at the end took me 22 hours over two weeks. Budget for those spikes.
+
+---
+
+u/third_year_problems:
+Novak's Networks (CS370) I'd say 9-11 hours/week. More consistent than OS. The Wireshark labs are time-consuming but interesting. The socket programming project at the end is substantial.
+
+---
+
+u/easy_semester_needed:
+Park's Databases (CS315) is the lightest upper-level CS course I took. Maybe 4-5 hours/week including class time. SQL assignments are straightforward, the final group project is manageable if you don't wait until the last week. Good choice for a semester when you're overloaded elsewhere.
+
+---
+
+u/practical_cs_student:
+Summary from lightest to heaviest workload based on this thread:
+1. Park Databases (CS315) — ~4-5 hrs/week
+2. Hartley Data Structures (CS201) — ~8-10 hrs/week
+3. Chen Algorithms (CS302) — ~8-10 hrs/week
+4. Webb Operating Systems (CS350) — ~8-9 hrs/week (spikes)
+5. Novak Networks (CS370) — ~9-11 hrs/week
+6. Lopez Machine Learning (CS410) — ~15-16 hrs/week
+
+---
+
+u/just_graduated_finally:
+That tracks. Lopez is in a category of her own. I'd add that the Lopez workload is front-loaded with theory and back-loaded with the final project. Weeks 1-6 are hard, weeks 7-15 are brutal.

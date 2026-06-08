@@ -1,0 +1,36 @@
+SOURCE: Rate My Professor — Prof. Diana Lopez, CS410 Machine Learning, Lakewood State University
+
+---
+
+REVIEW 1 | Rating: 5/5 | Difficulty: 5/5
+Lopez's ML class is the best course I've taken in four years at Lakewood State. It's also the hardest. Plan for 15+ hours a week — weekly readings, coding projects in PyTorch, and a final project that needs to be publication-quality. She pushes you hard but the payoff is real. I landed my ML engineering internship directly because of the final project I built in her class. Worth every painful hour.
+
+---
+
+REVIEW 2 | Rating: 4/5 | Difficulty: 5/5
+The workload in this class is serious. Weekly problem sets on theory, coding assignments in PyTorch, and reading papers. Don't take this class during a heavy semester. That said, Lopez is an incredible teacher — she explains backpropagation and attention mechanisms in ways that actually make sense. Her enthusiasm for the subject is contagious. Just know what you're signing up for.
+
+---
+
+REVIEW 3 | Rating: 5/5 | Difficulty: 5/5
+I spent about 20 hours on the midterm project alone. I don't regret it. Lopez gives really thoughtful feedback on your modeling choices — she doesn't just look at your accuracy score, she asks why you made the architectural decisions you did. Lectures are fast-paced but she records them and posts them. The final project is a team project and is genuinely challenging — my team built a sentiment classifier and Lopez had detailed notes on every design choice.
+
+---
+
+REVIEW 4 | Rating: 3/5 | Difficulty: 5/5
+I'm dropping this class after week 4. The workload is unsustainable for me given my other courses. Lopez is clearly a great professor and the material is excellent, but I underestimated what I was signing up for. I'd retake it in a semester where I have nothing else going on. If you can dedicate serious time to it, it'll probably be one of your best classes.
+
+---
+
+REVIEW 5 | Rating: 5/5 | Difficulty: 5/5
+Lopez expects you to be a serious student and she delivers serious teaching in return. Every lecture has prerequisites — she expects you've done the reading and uses class time for depth, not summary. Her grading is rigorous but her expectations are clearly communicated. The final project takes up most of the last month — budget accordingly. Strong prerequisite: you need solid linear algebra and Python skills.
+
+---
+
+REVIEW 6 | Rating: 4/5 | Difficulty: 4/5
+Really enjoyed this class despite the heavy workload. The PyTorch assignments start manageable (logistic regression from scratch) and escalate to building transformer components by the end. Lopez is available during office hours and responds to questions thoughtfully. She's not the easiest grader but she explains every deduction. My main tip: start projects on the day they're assigned — do not wait.
+
+---
+
+REVIEW 7 | Rating: 4/5 | Difficulty: 5/5
+This class will consume your life for a semester. I spent approximately 15-18 hours per week on it including readings, problem sets, and projects. Lopez is brilliant and her lectures are genuinely insightful. She connects theory to current research in ways that make you feel like you're learning something that matters. The final project is the centerpiece — pick a topic you care about because you'll be living with it for months.

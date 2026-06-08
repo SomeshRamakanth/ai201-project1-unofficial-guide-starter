@@ -1,0 +1,36 @@
+SOURCE: Rate My Professor — Prof. Kevin Park, CS315 Database Systems, Lakewood State University
+
+---
+
+REVIEW 1 | Rating: 4/5 | Difficulty: 1/5
+Easy A if you show up and do the work. Park is a chill professor who doesn't pile on work. The SQL assignments are straightforward and he walks through everything in lecture. I didn't learn as much as I could have but I needed a lighter semester and this delivered. The textbook explanations are more rigorous than his lectures — read the textbook if you actually want to learn the material deeply.
+
+---
+
+REVIEW 2 | Rating: 3/5 | Difficulty: 2/5
+Park's class is fine. It won't challenge you but it won't stress you out either. The lectures cover the basics but not in great depth — I've seen more detailed SQL tutorials on YouTube. That said, it's a good class to take if you want a reasonable introduction without the pressure of a harder course. Grading is generous. The group project is easy to coast through.
+
+---
+
+REVIEW 3 | Rating: 3/5 | Difficulty: 2/5
+I took this hoping to really dig into database internals — B-trees, query optimization, transactions. Instead it's mostly SQL syntax and basic normalization. Easy A, sure, but I feel like I could have learned the same things in a weekend on my own. Park is a nice person and class is relaxed. Just don't expect to be challenged.
+
+---
+
+REVIEW 4 | Rating: 5/5 | Difficulty: 2/5
+Perfect class for my needs. I was double-taking a hard theory course and needed something I could manage. Park's class was exactly that. He explains SQL clearly, the assignments are doable in a few hours, and he curves generously. Not the hardest class but not everyone needs every class to be a grind. He's genuinely kind and always available for questions.
+
+---
+
+REVIEW 5 | Rating: 4/5 | Difficulty: 2/5
+Park is a nice professor who makes the material accessible. The class won't crush your GPA. Lectures are fine but not riveting — he covers the material in a matter-of-fact way without a lot of depth. The final project is a group database application and grading is lenient. If you need databases on your resume and don't want to fight for it, this is your class.
+
+---
+
+REVIEW 6 | Rating: 2/5 | Difficulty: 1/5
+Too easy. I wanted to learn about indexing strategies, ACID properties in depth, distributed databases — the stuff that matters at scale. Instead we did SQL for 10 weeks. Park is a perfectly nice person but this class is not rigorous. I wish there was a more advanced databases option. Graded on participation and a simple group project.
+
+---
+
+REVIEW 7 | Rating: 4/5 | Difficulty: 2/5
+If you're looking for an easy A in the CS department, Park's databases class is the one. He's friendly, class meets twice a week and is never overwhelming. The SQL content is genuinely useful for anyone going into software roles. He drops the lowest homework grade and gives a generous final exam. Good option when you need to balance a tough semester.

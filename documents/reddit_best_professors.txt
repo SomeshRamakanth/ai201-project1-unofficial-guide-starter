@@ -1,0 +1,46 @@
+SOURCE: Reddit r/LakewoodStateCS — Thread: "Best CS professors for feedback and learning?"
+
+---
+
+Posted by u/cs_junior_lsu:
+Trying to plan my schedule for next year. Which professors actually give you useful feedback and help you grow, not just assign grades? I want to come out of these classes actually knowing things.
+
+---
+
+u/gradschool_bound:
+Sandra Chen for algorithms without question. Her written feedback on assignments is more detailed than feedback I've gotten from research mentors. She explains exactly where your reasoning is wrong and what a correct approach looks like. She also genuinely prepares you — her class is the reason I'm not bombing my grad school algorithms assignments right now.
+
+---
+
+u/senior_cs_lsu:
+Chen is the obvious answer for feedback. But also think about what kind of learning you want. If you want someone to challenge you intellectually and not hold your hand, Hartley for data structures is unbeatable. He's demanding but what he teaches sticks. I still remember his lecture on amortized complexity word for word.
+
+---
+
+u/cs_junior_lsu [OP]:
+What about for systems? I need to take OS next semester.
+
+---
+
+u/nightowl_coder:
+Webb for OS is fine. He's not exciting but he's fair and knows his material. The real learning in that class comes from the projects, not the lectures. His office hours are okay but don't expect him to lavish feedback on you — you'll know if something is wrong but he won't always explain why in depth.
+
+---
+
+u/third_year_problems:
+For real feedback and genuine engagement, Chen and Lopez are the top two. Lopez is almost TOO engaged — she'll spend an hour in office hours pulling your ML project apart and rebuilding it with you. That's amazing but also intense. Not everyone has the time for that level of engagement.
+
+---
+
+u/gradschool_bound:
+Also worth mentioning: Novak in Computer Networks gives really thoughtful support during office hours. Different from Chen's written feedback but similarly valuable. She stays late, she's patient, and she actually explains the why behind networking concepts instead of just the what.
+
+---
+
+u/practical_cs_student:
+If you care about feedback: Chen > Lopez > Novak. If you care about pure learning value (harder courses): Hartley > Chen > Lopez. If you want a reasonable GPA with less stress: Park for databases is genuinely the easiest graded course in the upper-level CS electives.
+
+---
+
+u/cs_junior_lsu [OP]:
+This is super helpful. Going with Chen for Algorithms and Webb for OS next semester. Maybe Lopez in spring if I clear my schedule.

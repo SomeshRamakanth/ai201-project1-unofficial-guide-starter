@@ -1,0 +1,36 @@
+SOURCE: Rate My Professor — Prof. Marcus Webb, CS350 Operating Systems, Lakewood State University
+
+---
+
+REVIEW 1 | Rating: 3/5 | Difficulty: 3/5
+Webb is a fair grader and knows the material deeply. Lectures are dry — very dry. He reads from slides with minimal energy. But the slides themselves are actually comprehensive and well-organized, so I learned by reading them more than by attending. The programming projects (implementing a simple scheduler, then a file system) are the real education. Those took a lot of time but were genuinely interesting. Exams are fair — nothing unexpected.
+
+---
+
+REVIEW 2 | Rating: 4/5 | Difficulty: 3/5
+People complain about Webb being boring but I think that's unfair. He's methodical and precise, which matters in OS where the details are everything. His exams are straightforward if you attend class and do the readings. He's not flashy but he doesn't waste your time with nonsense either. The projects are hard but the TAs are responsive. Overall a solid experience.
+
+---
+
+REVIEW 3 | Rating: 3/5 | Difficulty: 3/5
+Webb's class is manageable if you put in consistent effort. Don't fall behind on the projects — they build on each other and the last one is brutal if you have unresolved bugs in earlier ones. Office hours: he's available and answers questions clearly, but he gives minimal feedback on your approach. You'll know if something is wrong but not always why. Exams are fair and cover exactly what he said would be covered.
+
+---
+
+REVIEW 4 | Rating: 2/5 | Difficulty: 3/5
+I was really hoping to like this class but Webb's teaching style doesn't work for me. The lectures feel like he's reading to himself. I got more out of the OSTEP textbook than the actual class. The projects are good though. If you're self-motivated and can learn from a textbook, you'll be fine. If you need an engaging lecturer to stay motivated, look elsewhere or plan to supplement heavily.
+
+---
+
+REVIEW 5 | Rating: 4/5 | Difficulty: 3/5
+Webb is consistent and fair. What you see is what you get. He posts the exact topics for each exam, his grading is predictable, and he doesn't play games with extra credit or weird weighting. I respect that. The class is a reasonable workload — more than intro courses but not overwhelming. Good preparation for systems programming in general.
+
+---
+
+REVIEW 6 | Rating: 3/5 | Difficulty: 4/5
+OS with Webb was my hardest class last semester, mostly because of the projects. The final file system project took me about 25 hours. Webb doesn't help much during office hours beyond pointing you to documentation. But the exam questions are fair — he explicitly says "these topics will be tested" and then tests exactly those topics. No surprises.
+
+---
+
+REVIEW 7 | Rating: 4/5 | Difficulty: 3/5
+Underrated professor. Yes, his lectures are dry. But the material is genuinely fascinating once you engage with the projects. Implementing a basic shell from scratch changed how I think about programming. Webb is not a warm presence but he's honest, fair, and available. If you want entertainment go watch YouTube. If you want to actually understand how operating systems work, take Webb.

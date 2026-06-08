@@ -1,0 +1,36 @@
+SOURCE: Rate My Professor — Prof. Rachel Novak, CS370 Computer Networks, Lakewood State University
+
+---
+
+REVIEW 1 | Rating: 5/5 | Difficulty: 4/5
+Novak's office hours are the best I've experienced at Lakewood State. She works through problems step by step, never makes you feel stupid, and stays well past the scheduled time if students still have questions. I showed up confused about TCP flow control and left with a complete understanding. The class is challenging but she gives you every tool you need to succeed.
+
+---
+
+REVIEW 2 | Rating: 5/5 | Difficulty: 4/5
+Novak is genuinely invested in student understanding. Her office hours are packed for a reason — she actually helps. She doesn't give you the answer, she walks you through the reasoning until you see it yourself. Her exams are hard but fair. She gives a detailed study guide and sticks to it. I came in knowing nothing about networking and left able to explain TCP/IP from memory.
+
+---
+
+REVIEW 3 | Rating: 4/5 | Difficulty: 4/5
+Really good professor. She explains how protocols work from the ground up — I finally understand why HTTP uses TCP and when you'd use UDP. The Wireshark labs were the highlight of the course. Office hours: she's extremely helpful and patient. She stayed an extra 45 minutes the week before the final because students had so many questions. Not many professors do that.
+
+---
+
+REVIEW 4 | Rating: 5/5 | Difficulty: 4/5
+Novak is one of the most dedicated professors in the department. Her class is tough — the projects require real networking knowledge — but she scaffolds everything well. If you do the Wireshark labs and attend office hours, you'll be prepared. She responds to every email thoughtfully and within a day. Highly recommend for anyone going into backend or systems work.
+
+---
+
+REVIEW 5 | Rating: 4/5 | Difficulty: 3/5
+Good class. Novak is well-organized and the material is practical — packet analysis, socket programming, understanding DNS and HTTP in depth. Office hours have a queue system now because they got too crowded, but she works through every student's questions before leaving. Exams are manageable if you study her posted practice questions — she uses very similar formats.
+
+---
+
+REVIEW 6 | Rating: 3/5 | Difficulty: 4/5
+The class is good but very content-heavy. Four layers of the TCP/IP stack, routing algorithms, transport protocols, application layer protocols — a lot to absorb. Novak is an excellent professor but the volume of material sometimes feels overwhelming. Her office hours are genuinely a lifeline. Go to them. Don't try to self-study your way through the hard weeks without help.
+
+---
+
+REVIEW 7 | Rating: 5/5 | Difficulty: 4/5
+I went to Novak's office hours every week and it made all the difference. She never rushes you and she clearly remembers where each student is in their understanding from session to session. The class has a reputation for being hard, but with her support it's very passable. The final project (building a simple client-server application) was challenging but I learned more in that two weeks than in any other project this semester.
