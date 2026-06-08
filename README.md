@@ -1,12 +1,5 @@
 # The Unofficial Guide — Project 1
 
-> **How to use this template:**
-> Complete each section *after* you've built and tested the corresponding part of your system.
-> Do not write placeholder text — if a section isn't done yet, leave it blank and come back.
-> Every section below is required for submission. One-liners will not receive full credit.
-
----
-
 ## Domain
 
 Student-generated knowledge about CS professors and courses at Lakewood State University. This covers Rate My Professor-style reviews, Reddit threads with exam tips and course selection advice, and an informal student survival guide. This knowledge is valuable because official course descriptions only list topics and prerequisites — they say nothing about teaching style, exam difficulty, actual weekly workload, or whether office hours are useful. Students currently have to dig through fragmented subreddit threads and review sites. This system makes it searchable in plain language.
@@ -43,6 +36,61 @@ Student-generated knowledge about CS professors and courses at Lakewood State Un
 
 ---
 
+## Sample Chunks
+
+Five representative chunks drawn from the final index, showing different document types and how content is preserved at boundaries.
+
+---
+
+**Chunk 1** — `rmp_park_databases.txt` (index 8)
+> 's databases class is the one. He's friendly, class meets twice a week and is never overwhelming. The SQL content is genuinely useful for anyone going into software roles. He drops the lowest homework grade and gives a generous final exam. Good option when you need to balance a tough semester.
+
+*Self-contained? Yes — describes Park's course policies and grading in one coherent thought.*
+
+---
+
+**Chunk 2** — `reddit_course_selection.txt` (index 6)
+> up distributed systems coursework later. Novak is one of the better professors — her office hours alone make it worth it.
+>
+> u/rising_sophomore [OP]: Is Park's Databases worth taking if I want to go into ML?
+>
+> u/gradschool_bound: SQL is essential for any data work. Park's class covers it at a reasonable depth. The class won't be your hardest but the knowledge is directly applicable — querying, joins, normalization...
+
+*Self-contained? Yes — a full Q&A exchange with a clear question and direct answer.*
+
+---
+
+**Chunk 3** — `reddit_best_professors.txt` (index 3)
+> the teaches sticks. I still remember his lecture on amortized complexity word for word.
+>
+> u/cs_junior_lsu [OP]: What about for systems? I need to take OS next semester.
+>
+> u/nightowl_coder: Webb for OS is fine. He's not exciting but he's fair and knows his material. The real learning in that class comes from the projects, not the lectures. His office hours are okay but don't expect him to lavish feedback on you...
+
+*Self-contained? Yes — captures a thread exchange about OS and Webb's teaching style.*
+
+---
+
+**Chunk 4** — `student_guide_cs_dept.txt` (index 2)
+> doing every practice problem he posts, not just reading through them. His class has a steep curve by the end; very few students fail if they engage with the material. Best used for: building a real foundation in CS fundamentals.
+>
+> Prof. Sandra Chen (Algorithms, CS302)
+> Difficulty: Moderate-High. Reward: Very High. Chen is universally praised for the quality of her feedback. Assignments come back wit...
+
+*Self-contained? Mostly — covers Hartley's conclusion and the start of Chen's profile. The 60-char overlap is visible here, bridging two adjacent sections.*
+
+---
+
+**Chunk 5** — `rmp_chen_algorithms.txt` (index 0)
+> SOURCE: Rate My Professor — Prof. Sandra Chen, CS302 Algorithms, Lakewood State University
+>
+> REVIEW 1 | Rating: 5/5 | Difficulty: 4/5
+> Chen is the gold standard for feedback in this department. Every assignment comes back with detailed written comments — not just points off but an explanation of exactly where your reasoning broke down and what a correct approach looks like. I've never had a pro...
+
+*Self-contained? Yes — a complete review with rating, context, and the reviewer's main point intact.*
+
+---
+
 ## Embedding Model
 
 **Model used:** `all-MiniLM-L6-v2` via `sentence-transformers` (runs locally, no API key required)
@@ -63,7 +111,139 @@ The system prompt in `rag.py` contains the following explicit rules given to the
 
 The context is formatted as numbered blocks (`[1] Source: filename\n...`) so the model can reference specific chunks when citing.
 
-**How source attribution is surfaced in the response:** Every answer from the LLM ends with a `Sources:` section naming the document filenames it drew from. The Gradio UI additionally shows a "Retrieved from:" block below the answer listing each source file with its cosine similarity score, so users can see not just which documents were cited but how closely they matched the query.
+**How source attribution is surfaced in the response:** Every answer from the LLM ends with a `Sources:` section naming the document filenames it drew from. The Gradio UI additionally shows a "Retrieved from:" block below the answer listing each source file, so users can see exactly which documents the answer came from.
+
+---
+
+## Retrieval Test Results
+
+Three queries tested against the vector store. Top-5 chunks returned for each, with distance scores (lower = more similar).
+
+---
+
+**Query 1: "Which CS professor gives the most useful feedback?"**
+
+| Rank | Source | Distance | Snippet |
+|------|--------|----------|---------|
+| 1 | `reddit_best_professors.txt` | 0.2289 | *"Best CS professors for feedback and learning?" — thread where multiple students name Chen as the top choice for feedback* |
+| 2 | `student_guide_cs_dept.txt` | 0.3471 | *Hartley profile mentioning practice problems and steep curve* |
+| 3 | `rmp_webb_operating_systems.txt` | 0.3898 | *Webb review: "no surprises on exams"* |
+| 4 | `student_guide_cs_dept.txt` | 0.4124 | *Chen profile: "universally praised for the quality of her feedback"* |
+| 5 | `rmp_hartley_data_structures.txt` | 0.4133 | *Hartley review header* |
+
+**Why the top results are relevant:** Rank 1 is a Reddit thread explicitly titled "Best CS professors for feedback" — the query maps directly to this document's topic. Rank 4 contains the phrase "universally praised for the quality of her feedback" which is a near-exact semantic match. The distance of 0.23 on rank 1 is very strong (well below the 0.5 concern threshold), confirming high-confidence retrieval. Ranks 3 and 5 are weaker but still within the useful range.
+
+---
+
+**Query 2: "How hard are exams in Data Structures with Hartley?"**
+
+| Rank | Source | Distance | Snippet |
+|------|--------|----------|---------|
+| 1 | `student_guide_cs_dept.txt` | 0.3091 | *Hartley profile: "exams are among the hardest in the department"* |
+| 2 | `reddit_workload.txt` | 0.3266 | *"Hartley's Data Structures (CS201) is hard but the workload is more manageable than its reputation suggests"* |
+| 3 | `rmp_hartley_data_structures.txt` | 0.3300 | *Review mentioning class average ~65 before curve* |
+| 4 | `rmp_hartley_data_structures.txt` | 0.3552 | *"Do every single practice problem he posts"* |
+| 5 | `rmp_hartley_data_structures.txt` | 0.3738 | *Hartley review file header + Review 1* |
+
+**Why the top results are relevant:** Three of the top 5 are from `rmp_hartley_data_structures.txt` — the most directly relevant source. The student guide (rank 1) summarizes the same information in a single paragraph. All distances are below 0.38, indicating confident, on-topic retrieval. This query performed best overall.
+
+---
+
+**Query 3: "What is the workload like in Machine Learning with Lopez?"**
+
+| Rank | Source | Distance | Snippet |
+|------|--------|----------|---------|
+| 1 | `student_guide_cs_dept.txt` | 0.4451 | *Systems programming section — not about ML* |
+| 2 | `reddit_workload.txt` | 0.5468 | *Lopez workload summary: ~15-16 hrs/week* |
+| 3 | `reddit_workload.txt` | 0.5694 | *Park databases workload: ~4-5 hrs/week* |
+| 4 | `reddit_workload.txt` | 0.5788 | *Ranked workload list including Lopez at top* |
+| 5 | `reddit_workload.txt` | 0.5856 | *reddit_workload.txt header* |
+
+**Why retrieval is weaker here:** The top result (dist: 0.45) is from the systems section of the student guide — a partial mismatch. The most relevant content (Lopez, 15-16 hrs/week) doesn't appear until rank 2 with a distance of 0.55. This is above the ideal threshold and reflects a semantic gap: the query says "Machine Learning with Lopez" but the most relevant chunks use "Lopez's ML course" or "CS410" — the embedding model doesn't fully bridge these phrasings. The system still produced a correct answer by synthesizing ranks 2–5, but retrieval quality here is the weakest of the three tests.
+
+---
+
+## Example Responses
+
+**Response 1 — with source attribution (works well)**
+
+> **Query:** Which CS professor gives the most useful feedback on assignments?
+>
+> **Answer:** According to the provided context, Prof. Sandra Chen is universally praised for the quality of her feedback. Assignments come back with detailed, constructive comments, and her office hours are structured to help students think, not just to give them answers.
+>
+> Sources: student_guide_cs_dept.txt, rmp_chen_algorithms.txt
+>
+> **Retrieved from:**
+> • reddit_best_professors.txt
+> • student_guide_cs_dept.txt
+> • rmp_webb_operating_systems.txt
+> • rmp_hartley_data_structures.txt
+
+---
+
+**Response 2 — with source attribution (multi-source reasoning)**
+
+> **Query:** Should I take Algorithms before Machine Learning?
+>
+> **Answer:** Yes, it's recommended to take Chen's Algorithms before Lopez's Machine Learning. The algorithm analysis fundamentals taught in Chen's class — Big-O, dynamic programming, graph algorithms — are directly used in Machine Learning, and taking them in sequence will be beneficial.
+>
+> Sources: reddit_course_selection.txt, reddit_best_professors.txt
+>
+> **Retrieved from:**
+> • reddit_course_selection.txt
+> • reddit_best_professors.txt
+
+---
+
+**Response 3 — out-of-scope refusal**
+
+> **Query:** What is the price of a meal plan at Lakewood State?
+>
+> **Answer:** I don't have enough information in the documents to answer that reliably.
+>
+> **Retrieved from:**
+> • rmp_hartley_data_structures.txt
+> • rmp_lopez_machine_learning.txt
+> • rmp_park_databases.txt
+> • student_guide_cs_dept.txt
+> • reddit_course_selection.txt
+
+The system retrieved documents (because ChromaDB always returns k results) but the LLM correctly identified that none of the retrieved chunks contained anything about meal plan pricing and declined to answer rather than generating a plausible-sounding fabrication.
+
+---
+
+## Query Interface
+
+**Tool used:** Gradio (`app.py`) — run with `python app.py`, opens at `http://localhost:7860`
+
+**Input fields:**
+- **Your question** — a free-text box where the user types a plain-language question about CS professors or courses. Pressing Enter or clicking "Ask" submits it. Eight pre-written example questions are shown below the input for quick testing.
+
+**Output fields:**
+- **Answer** — the LLM-generated response, grounded in retrieved documents. Ends with a `Sources:` line listing the filenames cited.
+- **Retrieved from** — a separate box showing which documents were pulled from the vector store (one bullet per unique source file).
+
+**Sample interaction transcript:**
+
+```
+User input:  What do students say about office hours in Computer Networks?
+
+Answer:      Students praise Prof. Novak's office hours in Computer Networks,
+             saying they are the best they've experienced at Lakewood State
+             University. She works through problems step by step, never makes
+             students feel stupid, and stays past scheduled time to answer
+             questions. Even with a queue system in place due to high demand,
+             she ensures every student's questions are addressed.
+
+             Sources: rmp_novak_networks.txt, student_guide_cs_dept.txt
+
+Retrieved from:
+             • rmp_chen_algorithms.txt
+             • student_guide_cs_dept.txt
+             • rmp_novak_networks.txt
+             • student_guide_cs_dept.txt
+             • rmp_novak_networks.txt
+```
 
 ---
 

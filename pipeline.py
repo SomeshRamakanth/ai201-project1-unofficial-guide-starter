@@ -11,8 +11,8 @@ Re-running clears and rebuilds the collection.
 
 import os
 import glob
-import chromadb
-from sentence_transformers import SentenceTransformer
+import chromadb  # type: ignore[import]
+from sentence_transformers import SentenceTransformer # type: ignore
 
 DOCUMENTS_DIR = "documents"
 CHROMA_DIR = "chroma_db"
